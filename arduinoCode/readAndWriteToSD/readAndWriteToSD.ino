@@ -2,7 +2,17 @@
 #include <SD.h>
 
 #define errorPin 8
-#define SAMPLE_PERIOD_SEC 10000
+#define SAMPLE_PERIOD_SEC 1000
+
+/*
+ The circuit:
+    SD card attached to SPI bus as follows:
+ ** MOSI - pin 11 on Arduino Uno/Duemilanove/Diecimila
+ ** MISO - pin 12 on Arduino Uno/Duemilanove/Diecimila
+ ** CLK - pin 13 on Arduino Uno/Duemilanove/Diecimila
+ ** CS - depends on your SD card shield or module.
+ 		Pin 4 used here for consistency with other Arduino examples
+*/
 
 // set up variables using the SD utility library functions:
 File myFile;
@@ -41,8 +51,11 @@ void setup() {
   {
     digitalWrite(errorPin,HIGH);
     Serial.println("File opened succesfully.");
+    Serial.println("MQ-3,MQ-4,PRESION");
+    myFile.println("MQ-3,MQ-4,PRESION");
   } else {
-    while (1)
+    Serial.println("error opening file.");
+    while(1)
     {
       showError(errorPin,100);
     }
@@ -50,25 +63,39 @@ void setup() {
 }
 
 void loop() {
-  
-  if (millis() - previousTime >= SAMPLE_PERIOD_SEC)
+  if (myFile)
   {
-    for (int i = 0; i < 3; i++)
+    if (millis() - previousTime >= SAMPLE_PERIOD_SEC)
     {
-      sensorValues[i] = analogRead(sensorPins[i]);
-    }
+      //lectura de datos
+      for (int i = 0; i < 3; i++)
+      {
+        sensorValues[i] = analogRead(sensorPins[i]);
+      }
 
-    for(int i = 0; i < 2; i++)
-    {
-      Serial.print(sensorValues[i]); Serial.print(" ");
+      //escritura de datos a monitor serial y a tarjeta SD
+      for(int i = 0; i < 2; i++)
+      {
+        Serial.print(sensorValues[i]); Serial.print(",");
+        myFile.print(sensorValues[i]); myFile.print(",");
+      }
+      Serial.println(sensorValues[2]);
+      myFile.println(sensorValues[2]);
+      myFile.flush();
+      
+      //actualizamos variable temporal
+      previousTime = millis();
     }
-    Serial.println(sensorValues[2]);
-    previousTime = millis();
+  } else {
+    Serial.println("error opening file.");
+    while(1)
+    {
+      showError(errorPin,100);
+    }
   }
+  
 
 }
-
-
 
 void showError(int Pin, int speed)
 {
