@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 84.0, 1133.0, 705.0 ],
+		"rect" : [ 385.0, 130.0, 579.0, 628.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -39,6 +39,97 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-17",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1263.0, 595.0, 67.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"allwindowsactive" : 0,
+						"appicon_mac" : "",
+						"appicon_win" : "",
+						"audiosupport" : 1,
+						"bundleidentifier" : "com.mycompany.myprogram",
+						"cantclosetoplevelpatchers" : 1,
+						"cefsupport" : 1,
+						"copysupport" : 1,
+						"database" : 0,
+						"extensions" : 1,
+						"gensupport" : 1,
+						"midisupport" : 1,
+						"noloadbangdefeating" : 0,
+						"overdrive" : 0,
+						"preffilename" : "Max 8 Preferences",
+						"searchformissingfiles" : 1,
+						"statusvisible" : 0,
+						"usesearchpath" : 0
+					}
+,
+					"text" : "standalone"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-40",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1226.0, 416.200007200241089, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1226.0, 448.000010251998901, 184.0, 22.0 ],
+					"text" : "window flags close, window exec"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1226.0, 481.000010251998901, 67.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-45",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1132.0, 430.000010251998901, 70.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-5",
+					"maxclass" : "ezdac~",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1132.0, 459.000010251998901, 45.0, 45.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontface" : 1,
 					"fontsize" : 12.0,
@@ -562,7 +653,7 @@
 					"maxclass" : "live.comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 796.399998486042023, 308.199996948242188, 93.0, 35.0 ],
+					"patching_rect" : [ 796.399998486042023, 308.199996948242188, 94.0, 35.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 318.0, 21.600000619888306, 131.0, 21.0 ],
 					"text" : "Curve Mapping Factor",
@@ -798,17 +889,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 10.0, 12.0, 191.0, 70.0 ],
 					"proportion" : 0.5
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1037.0, 918.600000023841858, 32.0, 22.0 ],
-					"text" : "print"
 				}
 
 			}
@@ -1974,7 +2054,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 59.0, 106.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -2727,7 +2807,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 337.5, 413.199996948242188, 53.0, 22.0 ],
+					"patching_rect" : [ 347.5, 413.199996948242188, 53.0, 22.0 ],
 					"text" : "slide 5 5"
 				}
 
@@ -3202,7 +3282,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-123", 0 ],
-					"midpoints" : [ 347.0, 484.0, 23.0, 484.0, 23.0, 715.0, 45.899997532367706, 715.0 ],
+					"midpoints" : [ 357.0, 484.0, 23.0, 484.0, 23.0, 715.0, 45.899997532367706, 715.0 ],
 					"source" : [ "obj-26", 0 ]
 				}
 
@@ -3299,17 +3379,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
-					"order" : 1,
 					"source" : [ "obj-4", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"order" : 0,
-					"source" : [ "obj-4", 0 ]
+					"destination" : [ "obj-39", 0 ],
+					"source" : [ "obj-40", 0 ]
 				}
 
 			}
@@ -3324,6 +3409,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
 					"source" : [ "obj-41", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-45", 0 ]
 				}
 
 			}
@@ -3522,14 +3614,14 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "dataToMIDICC.maxpat",
-				"bootpath" : "~/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max",
+				"bootpath" : "~/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/MaxProjects/offlinePatch/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "scaleFactorGUI.maxpat",
-				"bootpath" : "~/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max",
+				"bootpath" : "~/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/MaxProjects/offlinePatch/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
