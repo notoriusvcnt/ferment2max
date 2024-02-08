@@ -9,7 +9,7 @@
 
 
 #define errorPin 8
-#define SAMPLE_PERIOD_SEC 1000
+#define SAMPLE_PERIOD_SEC 5000
 
 OneWire ourWire(2);                //Se establece el pin 2  como bus OneWire
  
@@ -39,6 +39,7 @@ const int chipSelect = 10;
 int sensorPins[3] = {0,1,2};
 float sensorValues[4];
 unsigned long previousTime = 0;
+unsigned long index = 1;
 
 
 void setup() {
@@ -82,8 +83,8 @@ void setup() {
   {
     digitalWrite(errorPin,HIGH);
     Serial.println("File opened succesfully.");
-    Serial.println("MQ-3,MQ-4,PRESION,TEMPERATURA");
-    myFile.println("MQ-3,MQ-4,PRESION,TEMPERATURA");
+    Serial.println("INDEX MQ-3 MQ-4 PRESION TEMPERATURA");
+    myFile.println("INDEX MQ-3 MQ-4 PRESION TEMPERATURA");
   } else {
     Serial.println("error opening file.");
     while(1)
@@ -110,15 +111,20 @@ void loop() {
 
 
       //escritura de datos a monitor serial y a tarjeta SD
+      Serial.print(index); Serial.print(" ");
+      myFile.print(index); myFile.print(" ");
+      index++;
+
       for(int i = 0; i < 3; i++)
       {
-        Serial.print(sensorValues[i]); Serial.print(",");
-        myFile.print(sensorValues[i]); myFile.print(",");
+        Serial.print(int(sensorValues[i])); Serial.print(" ");
+        myFile.print(int(sensorValues[i])); myFile.print(" ");
         lcd.setCursor(5*i,1);
         lcd.print(int(sensorValues[i]));
       }
-      Serial.println(sensorValues[3]);
-      myFile.println(sensorValues[3]);
+      Serial.println(sensorValues[3]); 
+      myFile.println(sensorValues[3]); 
+      
       lcd.setCursor(10,0);
       lcd.print(sensorValues[3]);
       myFile.flush();
