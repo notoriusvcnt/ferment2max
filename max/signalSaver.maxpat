@@ -250,8 +250,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -664,11 +662,11 @@
 				"box" : 				{
 					"id" : "obj-79",
 					"maxclass" : "newobj",
-					"numinlets" : 6,
+					"numinlets" : 5,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 954.5, 656.0, 255.0, 22.0 ],
-					"text" : "combine path / smooth / name .txt @triggers 4"
+					"text" : "combine path / smooth_ name .txt @triggers 3"
 				}
 
 			}
@@ -692,7 +690,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 976.0, 471.0, 130.0, 22.0 ],
-					"text" : "presion_0"
+					"text" : "temperatura_0"
 				}
 
 			}
@@ -1495,7 +1493,7 @@
 					"patching_rect" : [ 787.0, 98.5, 227.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 274.0, 23.0, 112.0, 22.0 ],
-					"text" : "presion_0",
+					"text" : "temperatura_0",
 					"textjustification" : 0
 				}
 
@@ -1970,7 +1968,7 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 701.0, 387.0, 56.0, 22.0 ],
 									"restore" : 									{
-										"coll-umenu" : [ "" ]
+										"coll-umenu" : [ "C:/Users/veste/Downloads/DATALOG.TXT" ]
 									}
 ,
 									"text" : "autopattr",
@@ -2053,7 +2051,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-20",
-									"items" : "<empty>",
+									"items" : [ "C:/Users/veste/Downloads/DATALOG.TXT", ",", "C:/Users/veste/Downloads/DATALOG.TXT" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -2097,7 +2095,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 870.0, 261.0, 135.0, 22.0 ],
-									"text" : "presion_0"
+									"text" : "temperatura_0"
 								}
 
 							}
@@ -4477,8 +4475,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-79", 4 ],
-					"midpoints" : [ 985.5, 642.0, 1152.799999999999955, 642.0 ],
+					"destination" : [ "obj-79", 3 ],
+					"midpoints" : [ 985.5, 642.0, 1141.0, 642.0 ],
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -4649,23 +4647,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mq-3_0.txt",
-				"bootpath" : "~/Desktop/datos/smooth",
-				"patcherrelativepath" : "../../../../../../Desktop/datos/smooth",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "n4m.monitor.maxpat",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "presion_sin suavizar.txt",
-				"bootpath" : "~/Desktop",
-				"patcherrelativepath" : "../../../../../../Desktop",
-				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
@@ -4678,6 +4662,13 @@
 , 			{
 				"name" : "resize_n4m_monitor_patcher.js",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "temperatura_0.txt",
+				"bootpath" : "~/Desktop/datos",
+				"patcherrelativepath" : "../../../../../../Desktop/datos",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
