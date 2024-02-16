@@ -250,8 +250,6 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
-						"node_bin_path" : "",
-						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -361,8 +359,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 644.0, 399.0, 77.0, 22.0 ],
-					"text" : "readAndSplit"
+					"patching_rect" : [ 644.0, 399.0, 97.0, 22.0 ],
+					"text" : "readAndSplit_v2"
 				}
 
 			}
@@ -624,7 +622,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-105",
-					"items" : "<empty>",
+					"items" : [ "mq-3_0.txt", ",", "mq-4_0.txt", ",", "presion_0.txt", ",", "temperatura_0.txt" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -692,7 +690,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 976.0, 471.0, 130.0, 22.0 ],
-					"text" : "mq-3_0"
+					"text" : "presion_0"
 				}
 
 			}
@@ -1460,7 +1458,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 845.0, 157.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"live.dial[1]" : [ 0.0 ],
+						"live.dial[1]" : [ 13.0 ],
 						"live.text[2]" : [ 0.0 ],
 						"live.text[3]" : [ 0.0 ],
 						"live.text[4]" : [ 0.0 ],
@@ -1495,7 +1493,7 @@
 					"patching_rect" : [ 787.0, 98.5, 227.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 274.0, 23.0, 112.0, 22.0 ],
-					"text" : "mq-3_0",
+					"text" : "presion_0",
 					"textjustification" : 0
 				}
 
@@ -2098,7 +2096,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 870.0, 261.0, 135.0, 22.0 ],
-									"text" : "mq-3_0"
+									"text" : "presion_0"
 								}
 
 							}
@@ -4197,7 +4195,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-71", 0 ],
-					"midpoints" : [ 711.5, 436.0, 428.0, 436.0 ],
+					"midpoints" : [ 731.5, 436.0, 428.0, 436.0 ],
 					"source" : [ "obj-3", 1 ]
 				}
 
@@ -4419,7 +4417,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-3", 1 ],
-					"midpoints" : [ 711.5, 384.0, 711.5, 384.0 ],
+					"midpoints" : [ 711.5, 384.0, 731.5, 384.0 ],
 					"source" : [ "obj-61", 0 ]
 				}
 
@@ -4628,7 +4626,7 @@
 			"obj-109" : [ "live.text[4]", "live.text[1]", 0 ],
 			"obj-112" : [ "live.dial[1]", "smooth", 0 ],
 			"obj-2" : [ "live.text[6]", "live.text", 0 ],
-			"obj-3::obj-10" : [ "live.text[5]", "live.text", 0 ],
+			"obj-3::obj-107" : [ "live.text[5]", "live.text", 0 ],
 			"obj-3::obj-11" : [ "live.text[1]", "live.text[1]", 0 ],
 			"obj-4" : [ "live.text[10]", "live.text", 0 ],
 			"obj-5" : [ "live.text[9]", "live.text", 0 ],
@@ -4643,24 +4641,10 @@
 
 			}
 ,
-			"parameter_overrides" : 			{
-				"obj-3::obj-10" : 				{
-					"parameter_longname" : "live.text[5]"
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "DATALOG_newformato.TXT",
-				"bootpath" : "~/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max",
-				"patcherrelativepath" : "..",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "createFolder.js",
 				"bootpath" : "~/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/max",
 				"patcherrelativepath" : ".",
@@ -4680,7 +4664,14 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "readAndSplit.maxpat",
+				"name" : "presion_0.txt",
+				"bootpath" : "~/Desktop/datos",
+				"patcherrelativepath" : "../../../../../../Desktop/datos",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "readAndSplit_v2.maxpat",
 				"bootpath" : "~/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
