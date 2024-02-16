@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 77.0, 1452.0, 921.0 ],
+		"rect" : [ 34.0, 77.0, 1852.0, 921.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,31 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-54",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 46.0, 699.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-53",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 46.0, 730.0, 55.0, 35.0 ],
+					"text" : ";\r\ndsp start"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"format" : 6,
 					"id" : "obj-48",
 					"maxclass" : "flonum",
@@ -58,7 +83,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
-					"patching_rect" : [ 113.0, 502.0, 52.0, 22.0 ],
+					"patching_rect" : [ 112.0, 498.0, 52.0, 22.0 ],
 					"text" : "/ 60000."
 				}
 
@@ -926,26 +951,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-13",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 846.0, 197.0, 56.0, 22.0 ],
-					"restore" : 					{
-						"live.dial[1]" : [ 16136.220472441016682 ],
-						"live.numbox" : [ 50.0 ],
-						"on-off" : [ 1.0 ],
-						"playback-speed" : [ 2386.440084691203992 ]
-					}
-,
-					"text" : "autopattr",
-					"varname" : "u037004783"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-27",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1122,7 +1127,7 @@
 					"patching_rect" : [ 787.0, 106.0, 227.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 282.0, 24.0, 179.0, 22.0 ],
-					"text" : "mq-3_1",
+					"text" : "presion_0",
 					"textjustification" : 0
 				}
 
@@ -1572,7 +1577,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 601.0, 34.5, 796.0, 175.0 ],
 					"range" : [ -0.1, 1.1 ],
-					"samples" : 711597.0
+					"samples" : 919573.0
 				}
 
 			}
@@ -1835,7 +1840,20 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-10",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 132.200000000000045, 302.0, 33.0, 22.0 ],
+									"text" : "read"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-24",
 									"maxclass" : "newobj",
@@ -1934,110 +1952,6 @@
 							}
 , 							{
 								"box" : 								{
-									"id" : "obj-1",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 4,
-									"outlettype" : [ "", "", "", "" ],
-									"patching_rect" : [ 701.0, 387.0, 56.0, 22.0 ],
-									"restore" : 									{
-										"coll-umenu" : [ "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/data/smooth/mq-3_1.txt" ]
-									}
-,
-									"text" : "autopattr",
-									"varname" : "u755001542"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-22",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 50.450000000000045, 245.323827981948853, 29.5, 22.0 ],
-									"text" : "0"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-18",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "bang", "bang", "bang" ],
-									"patching_rect" : [ 50.200000000000045, 146.323827981948853, 42.0, 22.0 ],
-									"text" : "t b b b"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-36",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 91.200000000000045, 218.323827981948853, 57.0, 22.0 ],
-									"text" : "tosymbol"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-35",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 91.200000000000045, 245.323827981948853, 65.0, 22.0 ],
-									"text" : "insert 0 $1"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-32",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 50.200000000000045, 111.323827981948853, 24.0, 24.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-30",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "bang" ],
-									"patching_rect" : [ 91.200000000000045, 188.323827981948853, 67.0, 22.0 ],
-									"text" : "opendialog"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-20",
-									"items" : [ "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/data/smooth/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/data/smooth/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/data/smooth/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/data/smooth/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/data/smooth/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/data/smooth/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/data/smooth/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/smooth_data/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/smooth_data/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/smooth_data/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/smooth_data/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/smooth_data/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/smooth_data/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/smooth_data/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/presion_0.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_0.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_0.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_0.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-4_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_0.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/temperatura_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/presion_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/mq-3_0.txt", ",", "C:/Users/veste/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/recordings/recording_1.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/17-01/data02/Ceibo_02.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/17-01/data02/Platano_Oriental-02_02.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/17-01/data02/Platano_Oriental-01_02.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/17-01/data02/Platano_Oriental-02_02.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/17-01/data01/Platano_Oriental-01_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/17-01/data01/Platano_Oriental-02_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/17-01/data01/Platano_Oriental-02_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/17-01/data02/Platano_Oriental-02_02.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/17-01/data02/Platano_Oriental-01_02.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/17-01/data01/Platano_Oriental-01_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/17-01/data02/Platano_Oriental-01_02.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/16-01/data01/Araucaria_Bidwilli_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/17-01/data01/Palo_Borracho_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/17-01/data01/Palma_Chilena-02_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/17-01/data01/Ceibo_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/17-01/data01/Platano_Oriental-02_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/16-01/data01/Araucaria_Bidwilli_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/16-01/data01/Cedro_del_Libano_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/16-01/data01/Araucaria_Bidwilli_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/16-01/data01/Cedro_del_Libano_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/16-01/data02/Cedro_del_Libano_02.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/16-01/data01/Araucaria_Bidwilli_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/16-01/data02/Palma_Chilena_02.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/16-01/data01/Araucaria_Bidwilli_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/16-01/data01/Araucaria_Bidwilli_01.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/16-01/data02/Cedro_del_Libano_02.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/16-01/data02/Roble_Americano_02.txt", ",", "C:/Users/veste/Documents/FREELANCE/2024/ÁRBOLES CIUDADANOS/tree2max/max/recordings/16-01/data02/Roble_Europeo_02.txt" ],
-									"maxclass" : "umenu",
-									"numinlets" : 1,
-									"numoutlets" : 3,
-									"outlettype" : [ "int", "", "" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 91.200000000000045, 278.323827981948853, 100.0, 22.0 ],
-									"pattrmode" : 1,
-									"varname" : "coll-umenu"
-								}
-
-							}
-, 							{
-								"box" : 								{
 									"id" : "obj-65",
 									"maxclass" : "button",
 									"numinlets" : 1,
@@ -2068,7 +1982,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 870.0, 261.0, 135.0, 22.0 ],
-									"text" : "mq-3_1"
+									"text" : "presion_0"
 								}
 
 							}
@@ -2095,18 +2009,6 @@
 									"outlettype" : [ "", "", "", "", "" ],
 									"patching_rect" : [ 788.0, 106.323827981948853, 80.0, 21.0 ],
 									"text" : "regexp .+/(.+)"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-14",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 132.200000000000045, 312.323827981948853, 49.0, 22.0 ],
-									"text" : "read $1"
 								}
 
 							}
@@ -3106,6 +3008,13 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-15", 0 ],
+									"source" : [ "obj-10", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-103", 0 ],
 									"midpoints" : [ 270.5, 306.0, 352.700000000000045, 306.0 ],
 									"source" : [ "obj-100", 0 ]
@@ -3208,14 +3117,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
-									"midpoints" : [ 141.700000000000045, 336.0, 141.700000000000045, 336.0 ],
-									"source" : [ "obj-14", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-105", 0 ],
 									"midpoints" : [ 189.700000000000045, 387.0, 282.0, 387.0, 282.0, 338.0, 241.5, 338.0 ],
 									"source" : [ "obj-15", 2 ]
@@ -3285,21 +3186,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-22", 0 ],
-									"source" : [ "obj-18", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-30", 0 ],
-									"midpoints" : [ 71.200000000000045, 183.0, 100.700000000000045, 183.0 ],
-									"source" : [ "obj-18", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-41", 0 ],
 									"midpoints" : [ 812.75, 129.0, 806.5, 129.0 ],
 									"source" : [ "obj-19", 1 ]
@@ -3308,23 +3194,8 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-14", 0 ],
-									"midpoints" : [ 141.200000000000045, 303.0, 141.700000000000045, 303.0 ],
-									"source" : [ "obj-20", 1 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-115", 0 ],
 									"source" : [ "obj-21", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-20", 0 ],
-									"source" : [ "obj-22", 0 ]
 								}
 
 							}
@@ -3347,48 +3218,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-6", 1 ],
 									"source" : [ "obj-3", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-19", 0 ],
-									"midpoints" : [ 100.700000000000045, 213.0, 492.0, 213.0, 492.0, 63.0, 797.5, 63.0 ],
-									"order" : 0,
-									"source" : [ "obj-30", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-36", 0 ],
-									"midpoints" : [ 100.700000000000045, 213.0, 100.700000000000045, 213.0 ],
-									"order" : 1,
-									"source" : [ "obj-30", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-18", 0 ],
-									"midpoints" : [ 59.700000000000045, 138.0, 59.700000000000045, 138.0 ],
-									"source" : [ "obj-32", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-20", 0 ],
-									"midpoints" : [ 100.700000000000045, 270.0, 100.700000000000045, 270.0 ],
-									"source" : [ "obj-35", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-35", 0 ],
-									"midpoints" : [ 100.700000000000045, 243.0, 100.700000000000045, 243.0 ],
-									"source" : [ "obj-36", 0 ]
 								}
 
 							}
@@ -3427,6 +3256,13 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-10", 0 ],
+									"source" : [ "obj-43", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-105", 0 ],
 									"order" : 1,
 									"source" : [ "obj-43", 1 ]
@@ -3438,24 +3274,6 @@
 									"destination" : [ "obj-15", 0 ],
 									"midpoints" : [ 184.950000000000045, 93.0, 201.0, 93.0, 201.0, 339.0, 141.700000000000045, 339.0 ],
 									"source" : [ "obj-43", 3 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
-									"midpoints" : [ 59.700000000000045, 96.0, 36.0, 96.0, 36.0, 348.0, 141.700000000000045, 348.0 ],
-									"order" : 0,
-									"source" : [ "obj-43", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-32", 0 ],
-									"midpoints" : [ 59.700000000000045, 72.0, 59.700000000000045, 72.0 ],
-									"order" : 1,
-									"source" : [ "obj-43", 0 ]
 								}
 
 							}
@@ -3781,51 +3599,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
 					"source" : [ "obj-11", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-4", 0 ],
-					"midpoints" : [ 867.833333333333371, 206.0, 702.0, 206.0, 702.0, 213.0, 192.0, 213.0, 192.0, 63.0, 38.5, 63.0 ],
-					"order" : 4,
-					"source" : [ "obj-13", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 867.833333333333371, 210.0, 702.0, 210.0, 702.0, 213.0, 192.0, 213.0, 192.0, 117.0, 67.5, 117.0 ],
-					"order" : 3,
-					"source" : [ "obj-13", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-59", 0 ],
-					"midpoints" : [ 867.833333333333371, 246.0, 766.5, 246.0 ],
-					"order" : 1,
-					"source" : [ "obj-13", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 867.833333333333371, 206.0, 702.0, 206.0, 702.0, 213.0, 192.0, 213.0, 192.0, 162.0, 149.5, 162.0 ],
-					"order" : 2,
-					"source" : [ "obj-13", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-9", 0 ],
-					"midpoints" : [ 867.833333333333371, 246.0, 915.5, 246.0 ],
-					"order" : 0,
-					"source" : [ "obj-13", 1 ]
 				}
 
 			}
@@ -4176,6 +3949,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-54", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"midpoints" : [ 360.5, 435.0, 360.5, 435.0 ],
 					"source" : [ "obj-56", 0 ]
@@ -4364,9 +4144,9 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "mq-3_1.txt",
-				"bootpath" : "~/Documents/FREELANCE/2023/XIMENA SANCHEZ/ferment2max/data/smooth",
-				"patcherrelativepath" : "./data/smooth",
+				"name" : "mq-3_0.txt",
+				"bootpath" : "~/Desktop/datos/smooth",
+				"patcherrelativepath" : "../../../../../../Desktop/datos/smooth",
 				"type" : "TEXT",
 				"implicit" : 1
 			}

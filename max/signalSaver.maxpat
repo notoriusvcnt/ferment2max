@@ -250,6 +250,8 @@
 					"saved_object_attributes" : 					{
 						"autostart" : 1,
 						"defer" : 0,
+						"node_bin_path" : "",
+						"npm_bin_path" : "",
 						"watch" : 0
 					}
 ,
@@ -1458,7 +1460,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 845.0, 157.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"live.dial[1]" : [ 13.0 ],
+						"live.dial[1]" : [ 0.0 ],
 						"live.text[2]" : [ 0.0 ],
 						"live.text[3]" : [ 0.0 ],
 						"live.text[4]" : [ 0.0 ],
@@ -1838,7 +1840,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-10",
@@ -3486,15 +3487,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-15", 0 ],
-									"midpoints" : [ 59.700000000000045, 96.0, 36.0, 96.0, 36.0, 348.0, 141.700000000000045, 348.0 ],
-									"order" : 0,
-									"source" : [ "obj-43", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-25", 0 ],
 									"order" : 0,
 									"source" : [ "obj-43", 3 ]
@@ -3505,7 +3497,6 @@
 								"patchline" : 								{
 									"destination" : [ "obj-32", 0 ],
 									"midpoints" : [ 59.700000000000045, 72.0, 59.700000000000045, 72.0 ],
-									"order" : 1,
 									"source" : [ "obj-43", 0 ]
 								}
 
@@ -4658,15 +4649,22 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "mq-3_0.txt",
+				"bootpath" : "~/Desktop/datos/smooth",
+				"patcherrelativepath" : "../../../../../../Desktop/datos/smooth",
+				"type" : "TEXT",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "n4m.monitor.maxpat",
 				"bootpath" : "C74:/packages/Node for Max/patchers/debug-monitor",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "presion_0.txt",
-				"bootpath" : "~/Desktop/datos",
-				"patcherrelativepath" : "../../../../../../Desktop/datos",
+				"name" : "presion_sin suavizar.txt",
+				"bootpath" : "~/Desktop",
+				"patcherrelativepath" : "../../../../../../Desktop",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
